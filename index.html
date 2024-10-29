@@ -1,13 +1,351 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bakery Website</title>
-    <link rel="stylesheet" href="style.css">
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Vidaloka&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <header class="header">
+      <a href="#" class="Brand-logo"
+        ><img
+          class="bakery-img"
+          src="Images\bakery.png"
+          alt="Brand-logo"
+        /><span class="bakery-name">Heaven's Feel Bakery</span></a
+      >
+
+      <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#about-us">About Us</a>
+        <a href="#products">Products</a>
+        <a href="#contact-us">Contact Us</a>
+      </nav>
+
+      <div class="cart-menu-icons">
+        <div id="cart-icon" title="Shopping Basket" class="fa-solid fa-basket-shopping">
+        </div>
+        <div id="menu-icon" title="Menu" class="fas fa-bars">
+        </div>
+      </div>
+    </header>
+
+    <div class="shopping-cart-container">
+      <div id="close-icon" class="fas fa-times"></div>
+      <h3 class="title">Checkout</h3>
+
+      <div class="cart-item">
+        <span class="fas fa-times"></span>
+        <img src="/Images/cart-1.jpg" alt="Img-1" />
+        <div class="content">
+          <h3>Apple Pie</h3>
+          <div class="price">₹299/-</div>
+        </div>
+      </div>
+
+      <div class="cart-item">
+        <span class="fas fa-times"></span>
+        <img src="/Images/cart-2.jpg" alt="Img-2" />
+        <div class="content">
+          <h3>Cinnamon Rolls</h3>
+          <div class="price">₹299/-</div>
+        </div>
+      </div>
+
+      <div class="cart-item">
+        <span class="fas fa-times"></span>
+        <img src="/Images/cart-3.jpg" alt="Img-3" />
+        <div class="content">
+          <h3>Cookies</h3>
+          <div class="price">₹799/-</div>
+        </div>
+      </div>
+
+      <a href="" class="btn">Checkout</a>
+    </div>
+
+    <section class="home" id="home">
+      <div class="swiper home-slider">
+        <div class="swiper-wrapper">
+          <div
+            class="swiper-slide slide"
+            style="background: url(/Images/slider1.jpg)"
+          >
+            <div class="content">
+              <h3>We Bake the World a Better Place</h3>
+              <a href="" class="btn">Get Started</a>
+            </div>
+          </div>
+
+          <div
+            class="swiper-slide slide slide-2"
+            style="background: url(/Images/slider2.jpg)"
+          >
+            <div class="content">
+              <h3>Bread and butter? More like bread and better!</h3>
+              <a href="" class="btn">Get Started</a>
+            </div>
+          </div>
+
+          <div
+          class="swiper-slide slide slide-3"
+          style="background: url(/Images/product-6.jpg)"
+        >
+          <div class="content">
+            <h3>You can't buy happiness, but you can buy freshly baked goodies, and that's pretty much the same thing!</h3>
+            <a href="" class="btn">Get Started</a>
+          </div>
+        </div>
+        </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </section>
+
+    <section class="banner">
+      <img src="/Images/banner.png" alt="" />
+    </section>
+
+    <section class="about-us" id="about-us">
+      <h1 class="heading"><span>About</span> Us</h1>
+
+      <div class="row">
+        <div class="image">
+          <img src="/Images/about.png" alt="" />
+        </div>
+
+        <div class="content">
+          <h3>Good things come to those <span>who bake</span> for others</h3>
+          <p>
+            Welcome to <span>Heaven's Feel Bakery</span>, where every bite tells
+            a story of passion, tradition, and a love for all things baked. Our
+            bakery has been a cherished spot for fresh, handmade pastries,
+            breads, and cakes, crafted daily with the finest ingredients.
+        </p>
+        
+        <p>Whether you're stopping by for a morning coffee and croissant,
+           picking up a cake for a special occasion, or simply indulging in a
+           sweet treat, we’re dedicated to making every visit memorable. We
+           pride ourselves on our commitment to quality, community, and the joy
+           of sharing good food.</p>
+
+           <p>Thank you for letting us be a part of your
+            celebrations and everyday moments. We look forward to baking
+            something special just for you!</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="products" id="products">
+      <h1 class="heading">Our <span>Products</span></h1>
+
+      <div class="cards-container">
+        <div class="card">
+          <div class="image">
+            <img src="/Images/product-1.jpg" alt="product-1-img">
+          </div>
+
+          <div class="content">
+            <h3>Pancake</h3>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <span class="price">₹99/-</span>
+            <a href="" class="btn">Add to Basket</a>
+          </div>
+        </div>
+
+
+
+        <div class="card">
+          <div class="image">
+            <img src="/Images/product-2.jpg" alt="product-2-img">
+          </div>
+
+          <div class="content">
+            <h3>Silver Dollar Pancake</h3>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <span class="price">₹149/-</span>
+            <a href="" class="btn">Add to Basket</a>
+          </div>
+        </div>
+
+
+
+        <div class="card">
+          <div class="image">
+            <img src="/Images/product-3.jpg" alt="product-3-img">
+          </div>
+
+          <div class="content">
+            <h3>White Bread with Honey</h3>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <span class="price">₹69/-</span>
+            <a href="" class="btn">Add to Basket</a>
+          </div>
+        </div>
+
+
+
+        <div class="card">
+          <div class="image">
+            <img src="/Images/product-4.jpg" alt="product-4-img">
+          </div>
+
+          <div class="content">
+            <h3>Cakes</h3>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <span class="price">₹999/-</span>
+            <a href="" class="btn">Add to Basket</a>
+          </div>
+        </div>
+
+
+
+        <div class="card">
+          <div class="image">
+            <img src="/Images/product-5.jpg" alt="product-5-img">
+          </div>
+
+          <div class="content">
+            <h3>Waffles</h3>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <span class="price">₹499/-</span>
+            <a href="/" class="btn">Add to Basket</a>
+          </div>
+        </div>
+
+
+
+        <div class="card">
+          <div class="image">
+            <img src="/Images/product-6.jpg" alt="product-6-img">
+          </div>
+
+          <div class="content">
+            <h3>Cookies</h3>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <span class="price">₹299/-</span>
+            <a href="" class="btn">Add to Basket</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-us" id="contact-us">
+      <h1 class="heading"><span>Contact</span> Us</h1>
+
+      <div class="row">
+        <div class="image">
+          <img src="/Images/order.gif" alt="contact-us-img">
+        </div>
+
+        <form action="">
+          <div class="inputBox">
+            <input type="text" placeholder="First Name">
+            <input type="text" placeholder="Last Name">
+          </div>
+
+          <div class="inputBox">
+            <input type="email" placeholder="Email Address">
+            <input type="number" placeholder="Phone Number">
+          </div>
+
+          <textarea placeholder="Your Messsage Here" cols="30" rows="10"></textarea>
+          <input type="submit" value="Contact Us" class="btn">
+        </form>
+      </div>
+    </section>
+
+
+    <section class="footer">
+      <div class="boxes-container">
+
+        <div class="box">
+          <h3>Address</h3>
+          <p>440, Daya Complex Kelaskar Naka, Dapoli, Maharashtra 415712</p>
+          <div class="share">
+            <a href="" class="fab fa-facebook-f"></a>
+            <a href="" class="fab fa-instagram"></a>
+            <a href="" class="fab fa-twitter"></a>
+            <a href="" class="fab fa-linkedin"></a>
+          </div>
+        </div>
+
+        <div class="box">
+          <h3>E-mail</h3>
+          <a href="" class="link">Heaven'sFeelBakery@gmail.com</a>
+        </div>
+
+        <div class="box">
+          <h3>Call Us</h3>
+          <p>+91 7721697720</p>
+          <p>+91 7745701010</p>
+        </div>
+
+        <div class="box">
+          <h3>Opening Hours</h3>
+          <p>Tuesday - Sunday&nbsp;&nbsp;&nbsp;9:00AM - 10:00PM <br> Monday Close</p>
+        </div>
+      </div>
+
+      <div class="credit">Created with ❤️ by <span>Sharvil Amburle</span> for <span>KDM Internship</span></div>
+    </section>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  </body>
 </html>
